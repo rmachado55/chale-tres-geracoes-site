@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -11,6 +12,7 @@ interface Product {
 }
 
 const Cardapios = () => {
+  const navigate = useNavigate();
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -68,6 +70,7 @@ const Cardapios = () => {
             <Card 
               key={product.id} 
               className="group hover:shadow-lg transition-all duration-300 cursor-pointer border-2 hover:border-coffee/20"
+              onClick={() => navigate(`/cardapio/${product.id}`)}
             >
               <CardHeader className="text-center p-6">
                 <div className="w-full h-48 mb-4 overflow-hidden rounded-lg bg-muted">

@@ -24,7 +24,7 @@ interface Product {
 }
 
 const ProductDetail = () => {
-  const { slug } = useParams();
+  const { label } = useParams();
   const navigate = useNavigate();
   const [product, setProduct] = useState<Product | null>(null);
   const [otherProducts, setOtherProducts] = useState<Product[]>([]);
@@ -34,7 +34,7 @@ const ProductDetail = () => {
     const fetchProduct = async () => {
       try {
         // Convert slug back to query format (cafeColonial -> titulo contains this)
-        const titleQuery = slug?.replace(/([A-Z])/g, ' $1').toLowerCase();
+        const titleQuery = label?.replace(/([A-Z])/g, ' $1').toLowerCase();
         
         const { data, error } = await supabase
           .from('products')

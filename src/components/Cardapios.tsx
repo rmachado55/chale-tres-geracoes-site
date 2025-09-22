@@ -79,7 +79,7 @@ const Cardapios = () => {
             <Card 
               key={product.id} 
               className="group hover:shadow-lg transition-all duration-300 cursor-pointer border-2 hover:border-coffee/20"
-              onClick={() => navigate(`/cardapio/${createSlug(product.titulo)}`)}
+              onClick={() => navigate(`/cardapio/${product.label}`)}
             >
               <CardHeader className="text-center p-6">
                 <div className="w-full h-48 mb-4 overflow-hidden rounded-lg bg-muted">

@@ -2,11 +2,11 @@ import { Card } from "@/components/ui/card";
 
 const Historia = () => {
   return (
-    <section id="historia" className="py-20 bg-gradient-to-b from-background to-accent/20">
+    <section id="sobre" className="py-20 bg-gradient-to-b from-background to-accent/20">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-coffee mb-6">
-            Nossa História
+            Sobre o Chalé
           </h2>
           <div className="w-24 h-1 bg-golden mx-auto mb-8"></div>
         </div>

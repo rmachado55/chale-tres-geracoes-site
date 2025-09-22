@@ -30,19 +30,19 @@ const Hero = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
-            onClick={() => scrollToSection('historia')}
+            onClick={() => scrollToSection('sobre')}
             size="lg"
             className="bg-cream text-coffee hover:bg-accent font-inter font-medium px-8 py-3 text-lg shadow-lg"
           >
-            Conheça Nossa História
+            Sobre o Chalé
           </Button>
           <Button 
-            onClick={() => scrollToSection('produtos')}
+            onClick={() => scrollToSection('cardapios')}
             variant="outline"
             size="lg"
-            className="border-cream text-cream hover:bg-cream hover:text-coffee font-inter font-medium px-8 py-3 text-lg"
+            className="border-cream text-cream hover:bg-cream hover:text-coffee font-inter font-medium px-8 py-3 text-lg shadow-lg"
           >
-            Ver Produtos
+            Ver Cardápios
           </Button>
         </div>
       </div>

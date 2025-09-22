@@ -10,10 +10,18 @@ const Contato = () => {
             Venha nos Visitar
           </h2>
           <div className="w-24 h-1 bg-golden mx-auto mb-8"></div>
-          <p className="text-lg text-muted-foreground font-inter max-w-2xl mx-auto">
-            Estamos abertos para recebê-lo em nosso aconchegante chalé. 
-            Venha saborear momentos especiais conosco!
-          </p>
+          <div className="w-full max-w-4xl mx-auto">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14057.972545424995!2d-52.41775966821186!3d-28.25306021377275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e2c09083861137%3A0xb14c8bb441a01931!2sR.%20Sananduva%2C%20152%20-%20Vila%20Vera%20Cruz%2C%20Passo%20Fundo%20-%20RS%2C%2099020-450!5e0!3m2!1spt-BR!2sbr!4v1758573854366!5m2!1spt-BR!2sbr" 
+              width="100%" 
+              height="450" 
+              style={{border:0}} 
+              allowFullScreen={true}
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded-lg shadow-lg"
+            ></iframe>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -31,8 +39,8 @@ const Contato = () => {
                   <div>
                     <h4 className="font-inter font-semibold text-foreground mb-1">Endereço</h4>
                     <p className="text-muted-foreground font-inter">
-                      Passo Fundo, RS<br />
-                      (Endereço completo em breve)
+                      Rua Sananduva 152<br />
+                      Vera Cruz - Passo Fundo - RS
                     </p>
                   </div>
                 </div>
@@ -57,8 +65,9 @@ const Contato = () => {
                   <div>
                     <h4 className="font-inter font-semibold text-foreground mb-1">Contato</h4>
                     <p className="text-muted-foreground font-inter">
-                      WhatsApp: (54) 9999-9999<br />
-                      Email: contato@chalebolos.com.br
+                      WhatsApp: (54) 99982-0152<br />
+                      Instagram: @chaleboloscia<br />
+                      Facebook: /lisandranacozinha
                     </p>
                   </div>
                 </div>
@@ -81,7 +90,7 @@ const Contato = () => {
                 <div className="space-y-4">
                   <Button 
                     className="w-full bg-coffee hover:bg-wood text-cream font-inter py-3 text-lg"
-                    onClick={() => window.open('https://wa.me/5554999999999', '_blank')}
+                    onClick={() => window.open('https://wa.me/5554999820152', '_blank')}
                   >
                     <span className="mr-2">💬</span>
                     WhatsApp
@@ -90,10 +99,10 @@ const Contato = () => {
                   <Button 
                     variant="outline"
                     className="w-full border-coffee text-coffee hover:bg-coffee hover:text-cream font-inter py-3 text-lg"
-                    onClick={() => window.open('mailto:contato@chalebolos.com.br', '_blank')}
+                    onClick={() => window.open('https://www.instagram.com/chaleboloscia', '_blank')}
                   >
-                    <span className="mr-2">✉️</span>
-                    Email
+                    <span className="mr-2">📷</span>
+                    Instagram
                   </Button>
                 </div>
 

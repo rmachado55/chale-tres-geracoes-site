@@ -16,6 +16,15 @@ const Cardapios = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
+  const createSlug = (title: string) => {
+    return title
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-zA-Z0-9\s]/g, '')
+      .replace(/\s+/g, '')
+      .toLowerCase();
+  };
+
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -70,7 +79,7 @@ const Cardapios = () => {
             <Card 
               key={product.id} 
               className="group hover:shadow-lg transition-all duration-300 cursor-pointer border-2 hover:border-coffee/20"
-              onClick={() => navigate(`/cardapio/${product.id}`)}
+              onClick={() => navigate(`/cardapio/${createSlug(product.titulo)}`)}
             >
               <CardHeader className="text-center p-6">
                 <div className="w-full h-48 mb-4 overflow-hidden rounded-lg bg-muted">

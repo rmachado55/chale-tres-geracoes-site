@@ -1,6 +1,9 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Historia = () => {
+  const navigate = useNavigate();
   return (
     <section id="sobre" className="py-20 bg-gradient-to-b from-background to-accent/20">
       <div className="container mx-auto px-4 max-w-4xl">
@@ -28,6 +31,15 @@ const Historia = () => {
               Com uma produção totalmente artesanal, oferecemos uma comida afetiva, cheia de carinho e 
               doce como um abraço de vó.
             </p>
+            <div className="text-center mt-6">
+              <Button 
+                variant="outline"
+                className="border-coffee text-coffee hover:bg-coffee hover:text-cream"
+                onClick={() => navigate('/sobre')}
+              >
+                Veja mais
+              </Button>
+            </div>
           </div>
         </Card>
         

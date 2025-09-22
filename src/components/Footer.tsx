@@ -16,9 +16,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-playfair font-semibold mb-4">Contato</h4>
             <div className="space-y-2 font-inter text-cream/80">
-              <p>📍 Passo Fundo, RS</p>
-              <p>📱 (54) 9999-9999</p>
-              <p>✉️ contato@chalebolos.com.br</p>
+              <p>📍 Rua Sananduva 152, Vera Cruz - Passo Fundo - RS</p>
+              <p>📱 (54) 99982-0152</p>
+              <p>📷 @chaleboloscia</p>
+              <p>👥 /lisandranacozinha</p>
             </div>
           </div>
           

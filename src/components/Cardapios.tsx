@@ -109,7 +109,7 @@ const Cardapios = () => {
                 )}
               </CardHeader>
               <CardContent className="px-6 pb-6">
-                {product.details && (
+                {product.label && (
                   <p className="text-sm text-muted-foreground font-inter leading-relaxed">
                     {product.details}
                   </p>

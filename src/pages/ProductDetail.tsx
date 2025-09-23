@@ -80,10 +80,10 @@ const ProductDetail = () => {
       }
     };
 
-    if (slug) {
+    if (label) {
       fetchProduct();
     }
-  }, [slug]);
+  }, [label]);
 
   const createSlug = (title: string) => {
     return title

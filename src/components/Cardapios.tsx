@@ -1,4 +1,4 @@
-ilsimport { useEffect, useState } from "react";
+ilsilsimport { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { supabase } from "@/integrations/supabase/client";
@@ -109,7 +109,7 @@ const Cardapios = () => {
                 )}
               </CardHeader>
               <CardContent className="px-6 pb-6">
-                {product.label && (
+                {product.details && (
                   <p className="text-sm text-muted-foreground font-inter leading-relaxed">
                     {product.details}
                   </p>

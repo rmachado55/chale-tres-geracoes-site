@@ -33,13 +33,10 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        // Convert slug back to query format (cafeColonial -> titulo contains this)
-        const titleQuery = label?.replace(/([A-Z])/g, ' $1').toLowerCase();
-        
         const { data, error } = await supabase
           .from('products')
           .select('*')
-          .ilike('titulo', `%${titleQuery}%`)
+          .eq('label', label)
           .single();
         
         if (error) {
@@ -222,7 +219,7 @@ const ProductDetail = () => {
                     <CarouselItem key={otherProduct.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                       <Card 
                         className="group hover:shadow-lg transition-all duration-300 cursor-pointer border-2 hover:border-coffee/20 h-full"
-                        onClick={() => navigate(`/cardapio/${createSlug(otherProduct.titulo)}`)}
+                        onClick={() => navigate(`/cardapio/${otherProduct.label}`)}
                       >
                         <CardHeader className="text-center p-4">
                           <div className="w-full h-32 mb-3 overflow-hidden rounded-lg bg-muted">

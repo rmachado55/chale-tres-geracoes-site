@@ -52,8 +52,10 @@ const Contato = () => {
                   <div>
                     <h4 className="font-inter font-semibold text-foreground mb-1">Horário de Funcionamento</h4>
                     <p className="text-muted-foreground font-inter">
-                      Segunda a Sábado: 8h às 18h<br />
-                      Domingo: 9h às 17h
+                      Segunda a Quinta - Fechado para o público externo<br />
+                      Sexta - 15:00 às 19:00<br />
+                      Sábado - 10:00 às 19:00<br />
+                      Domingo - 10:00 às 18:00
                     </p>
                   </div>
                 </div>
@@ -106,15 +108,6 @@ const Contato = () => {
                   </Button>
                 </div>
 
-                <div className="mt-8 p-6 bg-accent rounded-lg">
-                  <h4 className="font-playfair font-semibold text-coffee mb-3">
-                    Encomendas Especiais
-                  </h4>
-                  <p className="text-muted-foreground font-inter text-sm">
-                    Para bolos personalizados e eventos especiais, 
-                    entre em contato com antecedência de 48 horas.
-                  </p>
-                </div>
               </div>
             </CardContent>
           </Card>

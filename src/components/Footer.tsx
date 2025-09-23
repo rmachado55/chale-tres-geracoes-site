@@ -26,9 +26,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-playfair font-semibold mb-4">Horários</h4>
             <div className="space-y-2 font-inter text-cream/80">
-              <p>Segunda a Sábado</p>
-              <p>8h às 18h</p>
-              <p>Domingo: 9h às 17h</p>
+              <p>Segunda a Quinta - Fechado para o público externo</p>
+              <p>Sexta - 15:00 às 19:00</p>
+              <p>Sábado - 10:00 às 19:00</p>
+              <p>Domingo - 10:00 às 18:00</p>
             </div>
           </div>
         </div>

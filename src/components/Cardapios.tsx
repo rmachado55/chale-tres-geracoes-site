@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+ilsimport { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { supabase } from "@/integrations/supabase/client";
@@ -31,7 +31,7 @@ const Cardapios = () => {
       try {
         const { data, error } = await supabase
           .from('products')
-          .select('id, titulo, date, imagePath, label');
+          .select('id, titulo, date, imagePath, label, details');
         
         if (error) {
           console.error('Error fetching products:', error);

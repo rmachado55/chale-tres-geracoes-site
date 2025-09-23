@@ -21,6 +21,7 @@ export type Database = {
           created_at: string
           date: string | null
           doces: string[] | null
+          details: string | null
           frios: string[] | null
           id: number
           imagePath: string | null
@@ -28,7 +29,7 @@ export type Database = {
           paes: string[] | null
           price: number | null
           salgado: string[] | null
-          titulo: string | null
+          titulo: string | null          
         }
         Insert: {
           acompanhamentos?: string | null
@@ -36,6 +37,7 @@ export type Database = {
           created_at?: string
           date?: string | null
           doces?: string[] | null
+          details?: string | null
           frios?: string[] | null
           id?: number
           imagePath?: string | null
@@ -51,6 +53,7 @@ export type Database = {
           created_at?: string
           date?: string | null
           doces?: string[] | null
+          details?: string | null
           frios?: string[] | null
           id?: number
           imagePath?: string | null

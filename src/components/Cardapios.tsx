@@ -9,6 +9,7 @@ interface Product {
   date: string;
   imagePath: string;
   label: string;
+  details: string;
 }
 
 const Cardapios = () => {
@@ -110,7 +111,7 @@ const Cardapios = () => {
               <CardContent className="px-6 pb-6">
                 {product.label && (
                   <p className="text-sm text-muted-foreground font-inter leading-relaxed">
-                    {product.label}
+                    {product.details}
                   </p>
                 )}
               </CardContent>
